@@ -1,0 +1,73 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FarmaGitechs" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/golden_bell</item>
+        <item name="colorPrimaryVariant">@color/golden_bell</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/warm_blue</item>
+        <item name="colorSecondaryVariant">@color/warm_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+        <item name="fontFamily">@font/poppins</item>
+        <item name="colorBackground">@color/white_lilac</item>
+
+        <item name="textInputStyle">@style/EditText.Main</item>
+    </style>
+
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Light">
+        <item name="pdfView_actionBarTint">@color/golden_bell</item>
+    </style>
+
+    <style name="Text.Header" parent="Theme.FarmaGitechs">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="EditText.Main" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/white_lilac</item>
+        <item name="boxStrokeWidth">0dp</item>
+        <item name="boxStrokeColor">@color/white_lilac</item>
+        <item name="boxCornerRadiusTopStart">16dp</item>
+        <item name="boxCornerRadiusTopEnd">16dp</item>
+        <item name="boxCornerRadiusBottomStart">16dp</item>
+        <item name="boxCornerRadiusBottomEnd">16dp</item>
+        <item name="endIconTint">?colorPrimary</item>
+        <item name="android:textColorHint">@color/grey_chateau</item>
+    </style>
+
+    <style name="EditText.Search" parent="Widget.Material3.TextInputEditText.OutlinedBox">
+        <item name="android:background">@drawable/bg_edittext</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="drawableTint">@color/grey_chateau</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColorHint">@color/grey_chateau</item>
+    </style>
+
+    <style name="Button.Primary" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">?colorPrimary</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Button.Secondary" parent="Widget.Material3.Button.IconButton.Filled">
+        <item name="backgroundTint">?colorSecondary</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardView.Main" parent="CardView">
+        <item name="cardCornerRadius">24dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+</resources>

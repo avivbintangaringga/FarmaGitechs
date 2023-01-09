@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="?colorBackground"
+    tools:context=".ui.screens.patients.PatientsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingTop="36dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            style="@style/Text.Header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Pasien" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            style="@style/EditText.Search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:drawableEnd="@drawable/ic_search"
+            android:drawablePadding="16dp"
+            android:hint="Cari pasien..."
+            android:imeOptions="actionSearch"
+            android:inputType="text" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:requiresFadingEdge="vertical"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="24dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/item_patient" />
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/loading"
+        layout="@layout/layout_loading" />
+</RelativeLayout>
